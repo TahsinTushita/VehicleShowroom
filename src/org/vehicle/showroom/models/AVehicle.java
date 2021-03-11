@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package vehicleshowroom;
+package org.vehicle.showroom.models;
 
 /**
  *
@@ -46,7 +46,7 @@ public abstract class AVehicle {
    
     @Override
     public String toString(){
-        return "mn: "+ this.modelNumber + "  et: " + this.engineType + "  ep:  "+this.enginePower + 
-                "  ts:  "+this.tireSize + "  vt:  "  + this.vehicleType;
+        return "Vehicle Type: "  + this.vehicleType + "\nModel Number: "+ this.modelNumber + "\nEngine Type: " +
+                this.engineType + "\nEnginePower: " + this.enginePower + "\nTire Size: "+ this.tireSize + "\n";
     }
 }

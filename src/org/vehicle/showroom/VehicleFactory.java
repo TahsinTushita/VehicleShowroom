@@ -3,7 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package vehicleshowroom;
+package org.vehicle.showroom;
+
+import org.vehicle.showroom.constants.VehicleTypes;
+import org.vehicle.showroom.models.SportsVehicle;
+import org.vehicle.showroom.models.NormalVehicle;
+import org.vehicle.showroom.models.HeavyVehicle;
+import org.vehicle.showroom.models.AVehicle;
 
 
 /**
@@ -28,10 +34,10 @@ public class VehicleFactory {
             int tireSize, String turbo, float weight){
         
         switch(vehicleType){
-            case "Sports":
+            case VehicleTypes.SPORTS:
                 return new SportsVehicle(modelNumber, enginePower, tireSize, turbo); 
                 
-            case "Heavy":
+            case VehicleTypes.HEAVY:
                 return new HeavyVehicle(modelNumber, enginePower, tireSize, weight);
                 
             default:
