@@ -9,6 +9,20 @@ package vehicleshowroom;
  *
  * @author pc
  */
-public class SportsVehicle {
+public class SportsVehicle extends AVehicle{
+    
+    private String turbo;
+    
+    public SportsVehicle(String modelNumber, int enginePower, int tireSize, String turbo) {
+        super(modelNumber, "Oil", enginePower, tireSize, "Sports");
+        
+        this.turbo = turbo;
+    }
+    
+    @Override
+    public String toString(){
+        return "mn: "+ this.getModelNumber() + "  et: " + this.getEngineType() + "  ep:  "+this.getEnginePower() + 
+                "  ts:  "+this.getTireSize() + "  vt:  "  + this.getVehicleType() + " tb:  " + this.turbo;
+    }
     
 }

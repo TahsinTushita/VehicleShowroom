@@ -9,6 +9,10 @@ package vehicleshowroom;
  *
  * @author pc
  */
-public class NormalVehicle {
+public class NormalVehicle extends AVehicle{
+    
+    public NormalVehicle(String modelNumber, String engineType, int enginePower, int tireSize) {
+        super(modelNumber, engineType, enginePower, tireSize, "Normal");
+    }
     
 }
