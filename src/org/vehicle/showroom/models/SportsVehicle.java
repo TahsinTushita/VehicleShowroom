@@ -1,18 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package org.vehicle.showroom.models;
 
 import org.vehicle.showroom.constants.EngineTypes;
 import org.vehicle.showroom.constants.VehicleTypes;
-import org.vehicle.showroom.models.AVehicle;
 
-/**
- *
- * @author pc
- */
+
 public class SportsVehicle extends AVehicle{
     
     private String turbo;
@@ -25,9 +17,9 @@ public class SportsVehicle extends AVehicle{
     
     @Override
     public String toString(){
-        return "Vehicle Type: "  + this.getVehicleType() + "\nModel Number: "+ this.getModelNumber() + "\nEngine Type: " +
-                this.getEngineType() + "\nEnginePower: " + this.getEnginePower() + "\nTire Size: "+ this.getTireSize() +
-                "\nTurbo: " + this.turbo + "\n";
+        return "Vehicle Type: "  + this.getVehicleType() + "\n   Model Number: "+ this.getModelNumber() +
+                "\n   Engine Type: " + this.getEngineType() + "\n   EnginePower: " + this.getEnginePower() +
+                " hp\n   Tire Size: "+ this.getTireSize() + " inch\n   Turbo: " + this.turbo + "\n";
     }
     
 }

@@ -1,17 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package org.vehicle.showroom.observers;
 
-import org.vehicle.showroom.subjects.VehicleList;
+import org.vehicle.showroom.subjects.VehicleSubject;
 
-/**
- *
- * @author pc
- */
-public class VisitorObserver implements Observer{
+
+public class VisitorObserver implements IObserver{
             
     private static VisitorObserver instance;
     
@@ -40,10 +33,10 @@ public class VisitorObserver implements Observer{
     }
 
     public void printVisitorCount(){
-        if(VehicleList.getInstance().getVehicleList().isEmpty())
-            System.out.println("There are no visitors in the showroom as there are no vehicles");
+        if(VehicleSubject.getInstance().getVehicleList().isEmpty())
+            System.out.println("No visitors are expected in the showroom as there are no vehicles");
         else
-            System.out.println("Current visitor count  " + visitorCount);
+            System.out.println("Current expected visitor count:  " + visitorCount);
     }
     
 }

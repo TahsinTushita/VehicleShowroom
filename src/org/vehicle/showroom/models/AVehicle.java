@@ -1,14 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package org.vehicle.showroom.models;
 
-/**
- *
- * @author pc
- */
 public abstract class AVehicle {
     private String modelNumber;
     private String engineType;
@@ -46,7 +38,8 @@ public abstract class AVehicle {
    
     @Override
     public String toString(){
-        return "Vehicle Type: "  + this.vehicleType + "\nModel Number: "+ this.modelNumber + "\nEngine Type: " +
-                this.engineType + "\nEnginePower: " + this.enginePower + "\nTire Size: "+ this.tireSize + "\n";
+        return "Vehicle Type: "  + this.vehicleType + "\n   Model Number: "+ this.modelNumber + "\n   Engine Type: " +
+                this.engineType + "\n   EnginePower: " + this.enginePower + " hp\n   Tire Size: "+ this.tireSize + 
+                " inch\n";
     }
 }
